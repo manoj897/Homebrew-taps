@@ -11,7 +11,8 @@ class InmobiSdkWizard < Formula
   depends_on "openjdk"
 
   def install
-        bin.install "bin/SdkIntegrationWizard"
+        libexec.install Dir['*']
+        bin.write_jar_script libexec/'android-sdk-inmobisdkwizard.jar' "inmobiwizard"
   end
 
   test do
