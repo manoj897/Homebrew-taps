@@ -8,11 +8,11 @@ class InmobiSdkWizard < Formula
   sha256 "81978ddd587b0d7a9c45f260451e8f73bfe9e578d3dd3020d82b4c96967d5d8f"
   license ""
 
-  depends_on "openjdk"
+  depends_on "openjdk@8"
 
   def install
         libexec.install Dir['*']
-        bin.write_jar_script libexec/"android-sdk-inmobisdkwizard.jar" "inmobiwizard"
+        bin.write_jar_script libexec/"android-sdk-inmobisdkwizard.jar" "inmobiwizard" java_version: "1.8"
   end
 
   test do
