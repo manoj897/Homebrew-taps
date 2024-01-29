@@ -13,7 +13,7 @@ class Sdkintegrationwizard < Formula
 
   def install
     libexec.install Dir['*']
-    bin.write_jar_script libexec/"android-sdk-inmobisdkwizard.jar", "android-sdk-inmobisdkwizard", java_version: "11"
+    bin.write_jar_script libexec/"android-sdk-integration-wizard.jar", "android-sdk-integration-wizard", java_version: "11"
   end
 
   test do
