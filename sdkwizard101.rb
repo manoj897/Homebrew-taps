@@ -8,7 +8,7 @@ class Sdkwizard101 < Formula
   sha256 "10cc1c0afa898338f4684c562dee1c4b28d362b157a05bb8521d38280da57fbf"
   license ""
 
-  depends_on "openjdk@11"
+  depends_on "openjdk@17"
 
   def install
         libexec.install "wizard/output/wizard.jar"
