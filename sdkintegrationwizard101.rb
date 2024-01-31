@@ -9,6 +9,7 @@ class Sdkintegrationwizard101 < Formula
   license ""
 
   depends_on "openjdk@11"
+  depends_on "kotlin"
 
   def install
         libexec.install "bin/android-sdk-integration-wizard.jar"
