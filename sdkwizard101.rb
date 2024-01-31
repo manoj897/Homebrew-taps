@@ -12,7 +12,7 @@ class Sdkwizard101 < Formula
 
   def install
         libexec.install "wizard/output/wizard.jar"
-        bin.write_jar_script libexec/"wizard.jar", "sdkwizard", java_version: "11"
+        bin.write_jar_script libexec/"wizard.jar", "sdkwizard", java_version: "17"
   end
 
   test do
