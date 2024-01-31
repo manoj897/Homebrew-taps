@@ -8,7 +8,6 @@ class Sdkintegrationwizard < Formula
   sha256 "81978ddd587b0d7a9c45f260451e8f73bfe9e578d3dd3020d82b4c96967d5d8f"
   license ""
 
-  # depends_on "cmake" => :build
   depends_on "openjdk@11"
 
   def install

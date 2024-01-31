@@ -11,8 +11,8 @@ class Sdkintegrationwizard101 < Formula
   depends_on "openjdk@11"
 
   def install
-        libexec.install Dir['*']
-        bin.write_jar_script libexec/bin/"android-sdk-inmobisdkwizard.jar", "android-sdk-inmobisdkwizard", java_version: "11"
+        libexec.install "bin/android-sdk-inmobisdkwizard.jar"
+        bin.write_jar_script "android-sdk-inmobisdkwizard.jar", "android-sdk-inmobisdkwizard", java_version: "11"
   end
 
   test do
